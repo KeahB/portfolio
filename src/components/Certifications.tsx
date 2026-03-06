@@ -8,8 +8,8 @@ const certifications = [
     title: "Career Service Eligibility Professional Level 2",
     issuer: "Civil Service Commission",
     date: "Oct 2025",
-    link: "/files/KOICA-Certificate-1.png",
-    image: "/files/KOICA-Certificate-1.png"
+    link: "//files/csc cert.jpg",
+    image: "/files/csc cert.jpg"
   },
   {
     title: "Training on Foundational Big Data Analytics and Al",
