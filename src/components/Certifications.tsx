@@ -1,52 +1,58 @@
 import React, { useState, useRef } from 'react';
-import { motion, AnimatePresence, useScroll, useTransform } from 'motion/react';
+import { motion, AnimatePresence, useScroll, useTransform } from "framer-motion";
 import NeuralBackground from './NeuralBackground';
 import { Award, ExternalLink, Calendar, ChevronLeft, ChevronRight } from 'lucide-react';
+import cert1 from "../assets/files/cert1.jpg";
+import cert2 from "../assets/files/cert2.png";
+import cert3 from "../assets/files/cert2.png";
+import cert4 from "../assets/files/cert4.png";
+import cert5 from "../assets/files/cert5.png";
+import cert6 from "../assets/files/cert6.png";
+
 
 const certifications = [
   {
     title: "Career Service Eligibility Professional Level 2",
     issuer: "Civil Service Commission",
     date: "Oct 2025",
-    link: "//files/csc cert.jpg",
-    image: "/files/csc cert.jpg"
+    link: cert1,
+    image: cert1
   },
   {
-    title: "Training on Foundational Big Data Analytics and Al",
+    title: "Training on Foundational Big Data Analytics and AI",
     issuer: "KOICA DX Civil Society Cooperation",
     date: "Mar 2026",
-    link: "/files/KOICA-Certificate-1.png",
-    image: "/files/KOICA-Certificate-1.png"
+    link: cert2,
+    image: cert2
   },
   {
     title: "Contact Center Service NC II",
     issuer: "TESDA",
     date: "Mar 2026",
-    link: "/files/KOICA-Certificate-1.png",
-    image: "/files/KOICA-Certificate-1.png"
+    link: cert3,
+    image: cert3
   },
   {
     title: "Networking Basics",
     issuer: "Cisco Networking Academy",
     date: "Feb 2026",
-    link: "/files/Networking Basics.png",
-    image: "/files/Networking Basics.png"
+    link: cert4,
+    image: cert4
   },
   {
     title: "AI Fundamentals with IBM SkillsBuild",
     issuer: "IBM SkillsBuild",
     date: "Feb 2026",
-    link: "/files/AI Fundamentals with IBM SkillsBuild.png",
-    image: "/files/AI Fundamentals with IBM SkillsBuild.png"
+    link: cert5,
+    image: cert5
   },
   {
     title: "Introduction to IoT and Digital Transformation",
     issuer: "Cisco Networking Academy",
     date: "Feb 2026",
-    link: "/files/Introduction to IoT and Digital Transformation.png",
-    image: "/files/Introduction to IoT and Digital Transformation.png"
-  },
-  
+    link: cert6,
+    image: cert6
+  }
 ];
 
 export const Certifications = () => {
@@ -76,7 +82,6 @@ export const Certifications = () => {
       ref={sectionRef}
       className="section-padding bg-black relative overflow-hidden perspective-1000"
     >
-      <NeuralBackground />
       {/* Background Decorative Elements */}
       <div className="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none -z-10">
         <div className="absolute top-1/4 -left-20 w-96 h-96 bg-orange-500/10 rounded-full blur-[120px]" />
@@ -196,4 +201,6 @@ export const Certifications = () => {
     </section>
   );
 };
+
+
 

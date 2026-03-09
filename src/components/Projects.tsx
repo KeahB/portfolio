@@ -1,16 +1,15 @@
 import React from 'react';
 import { motion } from 'motion/react';
-import NeuralBackground from './NeuralBackground';
 import { Github, ExternalLink, Folder, Sparkles } from 'lucide-react';
-
+import p1Image from "../assets/files/project1.png";
 const projects = [
   {
-    title: "DARO-BMS",
-    description: "An Integrated Resident and Service Management Platform for Barangay Daro residents.",
-    tech: ["React", "Node.js", "Supabase", "Stripe"],
-    github: "#",
-    live: "#",
-    image: "/public/pics/DARO_BMS.png",
+    title: "AI Data Explorer",
+    description: "The app allows users to upload CSV or JSON datasets. Once uploaded, it instantly performs a deep statistical analysis, identifying numeric and categorical columns.",
+    tech: ["React19", "Node.js", "TypeScript", "Express", "Gemini API","Tailwind CSS"],
+    github: "https://github.com/KeahB/AI-Data-Explorer",
+    live: "https://ai-data-explorer.onrender.com/",
+    image: p1Image,
     color: "from-blue-600/20 to-cyan-600/20"
   },
   {
@@ -140,7 +139,6 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project, index }) => {
 export const Projects = () => {
   return (
     <section id="projects" className="section-padding bg-black relative overflow-hidden">
-      <NeuralBackground />
       {/* Background Decorative Elements */}
       <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-accent/5 rounded-full blur-[120px] -translate-y-1/2 translate-x-1/2" />
       
@@ -182,7 +180,7 @@ export const Projects = () => {
           className="mt-20 flex justify-center"
         >
           <a
-            href="https://github.com"
+            href="https://github.com/KeahB?tab=repositories"
             target="_blank"
             className="group relative px-10 py-5 bg-white text-black rounded-2xl font-bold text-base overflow-hidden transition-all flex items-center gap-3 hover:pr-12"
           >

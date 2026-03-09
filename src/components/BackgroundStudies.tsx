@@ -1,6 +1,5 @@
 import React, { useRef } from 'react';
 import { motion, useScroll, useTransform, useSpring } from 'motion/react';
-import NeuralBackground from './NeuralBackground';
 import { GraduationCap, BookOpen, School } from 'lucide-react';
 
 const studies = [
@@ -97,7 +96,6 @@ export const BackgroundStudies = () => {
 
   return (
     <section id="studies" ref={containerRef} className="section-padding bg-black relative overflow-hidden">
-      <NeuralBackground />
       {/* Animated Background Glows */}
       <div className="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none -z-10">
         <motion.div 

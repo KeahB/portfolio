@@ -10,9 +10,8 @@ import { Projects } from "./components/Projects";
 import { Skills } from "./components/Skills";
 import { Contact } from "./components/Contact";
 import { Footer } from "./components/Footer";
-import { NeuralNetworkBackground } from "./components/NeuralNetworkBackground";
 
-export default function App(): JSX.Element {
+export default function App() {
   const { scrollYProgress } = useScroll();
 
   const scaleX = useSpring(scrollYProgress, {
@@ -23,9 +22,6 @@ export default function App(): JSX.Element {
 
   return (
     <div className="relative bg-black text-white overflow-x-hidden">
-
-      {/* 🧠 AI Neural Network Background */}
-      <NeuralNetworkBackground />
 
       {/* 🔥 Scroll Progress Bar */}
       <motion.div

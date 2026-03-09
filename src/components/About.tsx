@@ -1,13 +1,14 @@
 import React from 'react';
 import { motion } from 'motion/react';
-import NeuralBackground from './NeuralBackground';
 import { Download, User, Mail, MapPin, Calendar, Briefcase, GraduationCap } from 'lucide-react';
+import aboutImage from "../assets/pics/keah-about.jpg";
+import cvFile from "../assets/files/KEAH-CV.pdf";
 
 export const About = () => {
   const handleDownloadCV = () => {
     const link = document.createElement("a");
-    link.href = "/files/KEAH-CV.pdf";
-    link.download = "Keah-Bareno-CV.pdf";
+    link.href = cvFile;
+    link.download = "KEAH-CV.pdf";
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
@@ -24,7 +25,6 @@ export const About = () => {
 
   return (
     <section id="about" className="section-padding bg-black relative overflow-hidden">
-      <NeuralBackground />
       {/* Background Glows */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-accent/10 rounded-full blur-[120px] -z-10" />
       
@@ -49,7 +49,7 @@ export const About = () => {
                     className="relative w-40 h-40 md:w-48 md:h-48 rounded-2xl overflow-hidden border-2 border-accent/30 p-1 bg-black/20"
                   >
                     <img
-                      src="/pics/keah-about.jpg"
+                      src={aboutImage}
                       alt="Keah Bareno"
                       className="w-full h-full object-cover rounded-xl"
                       referrerPolicy="no-referrer"
@@ -57,7 +57,7 @@ export const About = () => {
                   </motion.div>
                   <div className="text-center">
                     <h3 className="text-xl font-bold text-white">Keah Bareno</h3>
-                    <p className="text-accent text-sm font-medium">AI Prompt Engineer</p>
+                    <p className="text-accent text-sm font-medium">Vibe Coder & Frontend Developer</p>
                   </div>
                   
                   <motion.button
@@ -77,7 +77,7 @@ export const About = () => {
                       Personal <span className="text-accent">Details</span>
                     </h2>
                     <p className="text-slate-400 leading-relaxed">
-                      I am an AI Prompt Engineer and Frontend Developer passionate about building intelligent, dynamic, and user-centered digital experiences. I combine technical foundations in networking with modern AI-driven solutions.
+                      I am a Vibe Coder and Frontend Developer who loves building intelligent, dynamic, and user-centered digital experiences. I combine technical foundations with modern AI-driven solutions, all while keeping the vibes right.
                     </p>
                   </div>
 

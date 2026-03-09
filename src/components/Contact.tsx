@@ -1,6 +1,5 @@
 import React, { useState, useRef } from 'react';
 import { motion, useScroll, useTransform, useSpring } from 'motion/react';
-import NeuralBackground from './NeuralBackground';
 import { Mail, Phone, MapPin, Send, Github, Linkedin, Twitter, Sparkles } from 'lucide-react';
 
 export const Contact = () => {
@@ -56,7 +55,6 @@ export const Contact = () => {
       ref={sectionRef}
       className="section-padding bg-black relative overflow-hidden"
     >
-      <NeuralBackground />
       {/* Background Decorative Elements */}
       <div className="absolute inset-0 pointer-events-none -z-10">
         <motion.div 

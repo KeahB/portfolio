@@ -1,6 +1,5 @@
 import React from 'react';
 import { motion } from 'motion/react';
-import NeuralBackground from './NeuralBackground';
 import { 
   Code2, Database, Layout, Terminal, Cpu, Github, 
   Wind, Server, Zap, Layers, Settings, Move, 
@@ -43,7 +42,6 @@ const skills = [
 export const Skills = () => {
   return (
     <section id="skills" className="section-padding bg-black relative overflow-hidden">
-      <NeuralBackground />
       {/* Background Glow */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-accent/5 rounded-full blur-[120px] pointer-events-none" />
       
