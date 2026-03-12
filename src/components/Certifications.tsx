@@ -22,15 +22,15 @@ const certifications = [
     title: "Training on Foundational Big Data Analytics and AI",
     issuer: "KOICA DX Civil Society Cooperation",
     date: "Mar 2026",
-    link: cert2,
-    image: cert2
+    link: ,
+    image: 
   },
   {
     title: "Contact Center Service NC II",
     issuer: "TESDA",
     date: "Mar 2026",
-    link: cert3,
-    image: cert3
+    link: ,
+    image: 
   },
   {
     title: "Networking Basics",
