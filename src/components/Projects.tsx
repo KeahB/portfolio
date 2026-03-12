@@ -20,25 +20,25 @@ const projects = [
     live: "#",
     image: "https://picsum.photos/seed/ai/800/600",
     color: "from-emerald-600/20 to-teal-600/20"
-  },
-  {
-    title: "Crypto Tracker",
-    description: "Real-time cryptocurrency monitoring dashboard with interactive charts and price alerts.",
-    tech: ["React", "D3.js", "Coingecko API", "Firebase"],
-    github: "#",
-    live: "#",
-    image: "https://picsum.photos/seed/crypto/800/600",
-    color: "from-orange-600/20 to-red-600/20"
-  },
-  {
-    title: "Social Connect",
-    description: "A minimalist social media platform focused on privacy and meaningful interactions.",
-    tech: ["React Native", "GraphQL", "AWS Amplify"],
-    github: "#",
-    live: "#",
-    image: "https://picsum.photos/seed/social/800/600",
-    color: "from-purple-600/20 to-pink-600/20"
   }
+  // {
+  //   title: "Crypto Tracker",
+  //   description: "Real-time cryptocurrency monitoring dashboard with interactive charts and price alerts.",
+  //   tech: ["React", "D3.js", "Coingecko API", "Firebase"],
+  //   github: "#",
+  //   live: "#",
+  //   image: "https://picsum.photos/seed/crypto/800/600",
+  //   color: "from-orange-600/20 to-red-600/20"
+  // },
+  // {
+  //   title: "Social Connect",
+  //   description: "A minimalist social media platform focused on privacy and meaningful interactions.",
+  //   tech: ["React Native", "GraphQL", "AWS Amplify"],
+  //   github: "#",
+  //   live: "#",
+  //   image: "https://picsum.photos/seed/social/800/600",
+  //   color: "from-purple-600/20 to-pink-600/20"
+  // }
 ];
 
 interface ProjectCardProps {
