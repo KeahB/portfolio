@@ -1,6 +1,5 @@
 import React, { useState, useRef } from 'react';
 import { motion, AnimatePresence, useScroll, useTransform } from "framer-motion";
-import NeuralBackground from './NeuralBackground';
 import { Award, ExternalLink, Calendar, ChevronLeft, ChevronRight } from 'lucide-react';
 import cert1 from "../assets/files/cert1.jpg";
 // import cert2 from "../assets/files/cert2.png";
@@ -21,14 +20,14 @@ const certifications = [
   {
     title: "Training on Foundational Big Data Analytics and AI",
     issuer: "KOICA DX Civil Society Cooperation",
-    date: "Mar 2026",
-    
+    date: "Mar 2026"
+
   },
   {
     title: "Contact Center Service NC II",
     issuer: "TESDA",
-    date: "Mar 2026",
-    
+    date: "Mar 2026"
+
   },
   {
     title: "Networking Basics",
