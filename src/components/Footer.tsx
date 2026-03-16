@@ -118,17 +118,7 @@ export const Footer = () => {
           <p className="text-xs text-slate-500 font-medium">
             &copy; {currentYear} Keah Criselle Bareno. All rights reserved.
           </p>
-          
-          <div className="flex items-center gap-2 text-xs text-slate-500">
-            <span>Made with</span>
-            <motion.div
-              animate={{ scale: [1, 1.2, 1] }}
-              transition={{ duration: 2, repeat: Infinity }}
-            >
-              <Heart size={12} className="text-red-500 fill-red-500" />
-            </motion.div>
-            <span>in Philippines</span>
-          </div>
+        
 
           <div className="flex items-center gap-4">
             <a href="#" className="text-[10px] uppercase tracking-widest text-slate-500 hover:text-white transition-colors">Privacy</a>

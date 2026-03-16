@@ -3,8 +3,8 @@ import { motion, AnimatePresence, useScroll, useTransform } from "framer-motion"
 import NeuralBackground from './NeuralBackground';
 import { Award, ExternalLink, Calendar, ChevronLeft, ChevronRight } from 'lucide-react';
 import cert1 from "../assets/files/cert1.jpg";
-import cert2 from "../assets/files/cert2.png";
-import cert3 from "../assets/files/cert2.png";
+// import cert2 from "../assets/files/cert2.png";
+// import cert3 from "../assets/files/cert2.png";
 import cert4 from "../assets/files/cert4.png";
 import cert5 from "../assets/files/cert5.png";
 import cert6 from "../assets/files/cert6.png";
@@ -22,15 +22,13 @@ const certifications = [
     title: "Training on Foundational Big Data Analytics and AI",
     issuer: "KOICA DX Civil Society Cooperation",
     date: "Mar 2026",
-    link: cert2,
-    image: cert2
+    
   },
   {
     title: "Contact Center Service NC II",
     issuer: "TESDA",
     date: "Mar 2026",
-    link: cert3,
-    image: cert3
+    
   },
   {
     title: "Networking Basics",

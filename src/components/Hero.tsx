@@ -1,13 +1,12 @@
 import React, { useState, useEffect } from "react";
 import { motion } from "motion/react";
-import BubbleBackground from "./BubbleBackground";
+import LiquidEther from "./LiquidEther";
 import { ArrowRight, Github, Linkedin, Mail } from "lucide-react";
 import heroImage from "../assets/pics/keah-hero.png";
 
-
 export const Hero = () => {
   const [text, setText] = useState("");
-  const fullText = "Vibe Coder & Frontend Developer";
+  const fullText = "Frontend Developer - Prompt Engineer";
   const [index, setIndex] = useState(0);
 
   /* Typing Effect */
@@ -17,24 +16,46 @@ export const Hero = () => {
         setText((prev) => prev + fullText[index]);
         setIndex((prev) => prev + 1);
       }, 100);
+
       return () => clearTimeout(timeout);
     }
   }, [index]);
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
+   <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
 
-      {/* Bubble Background Component */}
-      <BubbleBackground />
+      {/* Liquid Ether Background */}
+{/* Liquid Ether Background */}
+<div className="absolute inset-0 -z-20">
+  <LiquidEther
+    colors={["#f97316", "#fb923c", "#c2410c"]}
+    mouseForce={20}
+    cursorSize={120}
+    isViscous
+    viscous={30}
+    iterationsViscous={32}
+    iterationsPoisson={32}
+    resolution={0.5}
+    isBounce={false}
+    autoDemo
+    autoSpeed={0.5}
+    autoIntensity={2.2}
+    takeoverDuration={0.25}
+    autoResumeDelay={3000}
+    autoRampDuration={0.6}
+    style={{ width: "100%", height: "100%" }}
+  />
+</div>
+      
 
-      {/* Dark Overlay */}
-      <div className="absolute inset-0 bg-black/70 -z-10"></div>
+      {/* Dark Overlay for readability */}
+      <div className="absolute inset-0 bg-black/60 -z-10"></div>
 
       {/* Content */}
-      <div className="container-custom px-6">
+      <div className="container-custom px-6 relative z-10">
         <div className="grid lg:grid-cols-2 items-center gap-12 lg:gap-20">
 
-          {/* LEFT */}
+          {/* LEFT CONTENT */}
           <motion.div
             initial={{ opacity: 0, x: -30 }}
             animate={{ opacity: 1, x: 0 }}
@@ -50,11 +71,12 @@ export const Hero = () => {
             </h1>
 
             <p className="text-xl md:text-2xl text-gray-300 h-8">
-              Just a{" "}
+              A passionate{" "}
               <span className="text-white font-medium">{text}</span>
-              <span className="inline-block w-0.5 h-6 ml-1 bg-orange-500 animate-pulse" />
+              <span className="inline-block w-0.5 h-6 ml-1 bg-orange-500 animate-pulse"></span>
             </p>
 
+            {/* Buttons */}
             <div className="flex flex-wrap justify-center lg:justify-start gap-4 pt-6">
               <a
                 href="#projects"
@@ -71,6 +93,7 @@ export const Hero = () => {
               </a>
             </div>
 
+            {/* Social Icons */}
             <div className="flex justify-center lg:justify-start gap-6 pt-10">
               {[
                 { icon: Github, href: "https://github.com/KeahB" },

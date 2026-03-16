@@ -2,6 +2,7 @@ import React from 'react';
 import { motion } from 'motion/react';
 import { Github, ExternalLink, Folder, Sparkles } from 'lucide-react';
 import p1Image from "../assets/files/project1.png";
+import p2IMage from "../assets/files/project2.png";
 const projects = [
   {
     title: "AI Data Explorer",
@@ -13,32 +14,32 @@ const projects = [
     color: "from-blue-600/20 to-cyan-600/20"
   },
   {
-    title: "AI Task Manager",
-    description: "Smart task management app that uses AI to prioritize and categorize your daily activities.",
-    tech: ["Next.js", "OpenAI API", "PostgreSQL", "Tailwind"],
-    github: "#",
-    live: "#",
-    image: "https://picsum.photos/seed/ai/800/600",
+    title: "Vagabound AI",
+    description: "Vagabound AI is a web-based application that helps users generate personalized travel itineraries using artificial intelligence. The system allows users to input their destination and travel preferences, then automatically creates suggested activities, attractions, and travel plans.",
+    tech: ["Next.js", "GEMINI AI API", "React", "Tailwind CSS"],
+    github: "https://github.com/KeahB/AI-Travel-Planner",
+    live: "https://vagabound-ai.vercel.app/",
+    image: p2IMage,
     color: "from-emerald-600/20 to-teal-600/20"
-  },
-  {
-    title: "Crypto Tracker",
-    description: "Real-time cryptocurrency monitoring dashboard with interactive charts and price alerts.",
-    tech: ["React", "D3.js", "Coingecko API", "Firebase"],
-    github: "#",
-    live: "#",
-    image: "https://picsum.photos/seed/crypto/800/600",
-    color: "from-orange-600/20 to-red-600/20"
-  },
-  {
-    title: "Social Connect",
-    description: "A minimalist social media platform focused on privacy and meaningful interactions.",
-    tech: ["React Native", "GraphQL", "AWS Amplify"],
-    github: "#",
-    live: "#",
-    image: "https://picsum.photos/seed/social/800/600",
-    color: "from-purple-600/20 to-pink-600/20"
   }
+  // {
+  //   title: "Crypto Tracker",
+  //   description: "Real-time cryptocurrency monitoring dashboard with interactive charts and price alerts.",
+  //   tech: ["React", "D3.js", "Coingecko API", "Firebase"],
+  //   github: "#",
+  //   live: "#",
+  //   image: "https://picsum.photos/seed/crypto/800/600",
+  //   color: "from-orange-600/20 to-red-600/20"
+  // },
+  // {
+  //   title: "Social Connect",
+  //   description: "A minimalist social media platform focused on privacy and meaningful interactions.",
+  //   tech: ["React Native", "GraphQL", "AWS Amplify"],
+  //   github: "#",
+  //   live: "#",
+  //   image: "https://picsum.photos/seed/social/800/600",
+  //   color: "from-purple-600/20 to-pink-600/20"
+  // }
 ];
 
 interface ProjectCardProps {
