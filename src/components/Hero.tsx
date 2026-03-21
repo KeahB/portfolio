@@ -6,7 +6,7 @@ import heroImage from "../assets/pics/keah-hero.png";
 
 export const Hero = () => {
   const [text, setText] = useState("");
-  const fullText = "Frontend Developer - Prompt Engineer";
+  const fullText = "Full Stack Prompt Engineer Developer";
   const [index, setIndex] = useState(0);
 
   /* Typing Effect */

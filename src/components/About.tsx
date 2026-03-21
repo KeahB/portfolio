@@ -2,13 +2,13 @@ import React from 'react';
 import { motion } from 'motion/react';
 import { Download, User, Mail, MapPin, Calendar, Briefcase, GraduationCap } from 'lucide-react';
 import aboutImage from "../assets/pics/keah-about.jpg";
-import cvFile from "../assets/files/KEAH-CV.pdf";
+import cvFile from "../assets/files/keah_prompt_engineer.pdf";
 
 export const About = () => {
   const handleDownloadCV = () => {
     const link = document.createElement("a");
     link.href = cvFile;
-    link.download = "KEAH-CV.pdf";
+    link.download = "keah_prompt_engineer.pdf";
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
@@ -19,7 +19,7 @@ export const About = () => {
     { icon: Mail, label: "Email", value: "barenokcy@gmail.com" },
     { icon: MapPin, label: "Location", value: "Dumaguete City" },
     { icon: Calendar, label: "Experience", value: "2+ Years" },
-    { icon: Briefcase, label: "Role", value: "Frontend Developer" },
+    { icon: Briefcase, label: "Role", value: "Fullstack Developer" },
     { icon: GraduationCap, label: "Education", value: "BS in Information Technology" },
   ];
 

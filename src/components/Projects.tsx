@@ -3,7 +3,27 @@ import { motion } from 'motion/react';
 import { Github, ExternalLink, Folder, Sparkles } from 'lucide-react';
 import p1Image from "../assets/files/project1.png";
 import p2IMage from "../assets/files/project2.png";
+import p3Image from "../assets/files/project3.png";
+import p4Image from "../assets/files/project4.png";
 const projects = [
+  {
+    title: "Soft Lines",
+    description: "A cinematic reading sanctuary designed for the modern observer. We’ve stripped away the clutter to create a high-contrast editorial experience that feels as premium as a physical magazine.",
+    tech: ["React19", "Vite","Tailwind CSS4","Framer Motion", " React Router 7 "],
+    github: "https://github.com/KeahB/blog-website",
+    live: "https://softlines-blog-website.vercel.app/",
+    image: p4Image,
+    color: "from-white-600/20 to-gray-600/20"
+  },
+  {
+    title: "THE ELEMENTS.",
+    description: "Is a premium e-commerce platform designed with a modern, high-end aesthetic. It offers a curated shopping experience for electronics, fashion, and jewelry, featuring a sophisticated dark-themed interface with smooth animations and a responsive layout.",
+    tech: ["React19", "JavaScript", "Vite 6", "Tailwind CSS 4", "Framer Motion", "Lucide React Icons", "React Router DOM 7"],
+    github: "https://github.com/KeahB/Elements-e-commerce-website",
+    live: "https://elements-ecommerce-website.vercel.app/",
+    image: p3Image,
+    color: "from-black-600/20 to-cyan-600/20"
+  },
   {
     title: "AI Data Explorer",
     description: "The app allows users to upload CSV or JSON datasets. Once uploaded, it instantly performs a deep statistical analysis, identifying numeric and categorical columns.",
@@ -22,24 +42,7 @@ const projects = [
     image: p2IMage,
     color: "from-emerald-600/20 to-teal-600/20"
   }
-  // {
-  //   title: "Crypto Tracker",
-  //   description: "Real-time cryptocurrency monitoring dashboard with interactive charts and price alerts.",
-  //   tech: ["React", "D3.js", "Coingecko API", "Firebase"],
-  //   github: "#",
-  //   live: "#",
-  //   image: "https://picsum.photos/seed/crypto/800/600",
-  //   color: "from-orange-600/20 to-red-600/20"
-  // },
-  // {
-  //   title: "Social Connect",
-  //   description: "A minimalist social media platform focused on privacy and meaningful interactions.",
-  //   tech: ["React Native", "GraphQL", "AWS Amplify"],
-  //   github: "#",
-  //   live: "#",
-  //   image: "https://picsum.photos/seed/social/800/600",
-  //   color: "from-purple-600/20 to-pink-600/20"
-  // }
+ 
 ];
 
 interface ProjectCardProps {
